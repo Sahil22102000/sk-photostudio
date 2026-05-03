@@ -1,0 +1,28 @@
+{
+  "overview": "A full-featured light-mode website for SK PHOTOSTUDIO, a photo studio in Khapri, Maharashtra. Showcases all services (photo albums, framing, printing, visa/passport photos), a portfolio gallery, appointment booking, customer testimonials, and full contact information with WhatsApp integration.",
+  "features": [
+    "Interactive 3D hero section with photography-themed visuals",
+    "Portfolio gallery with 9 sample work cards",
+    "Detailed service cards for all 4 services",
+    "Built-in appointment booking form with backend submission",
+    "Book Now button linked to WhatsApp",
+    "Customer testimonials carousel with star ratings",
+    "Animated stats counter (clients, projects, years)",
+    "Floating social sidebar with WhatsApp, Instagram, Facebook",
+    "AI chatbot widget with photo studio quick-replies",
+    "Full contact section with map address, phone, and hours",
+    "Light mode design with warm amber/gold accents"
+  ],
+  "category": "business",
+  "tags": [
+    "photo-studio",
+    "photography",
+    "business-website",
+    "light-mode",
+    "booking",
+    "gallery",
+    "maharashtra",
+    "india"
+  ],
+  "last_updated": "2026-04-26T11:43:41.360Z"
+}

@@ -1,0 +1,41 @@
+type Timestamp = int;
+type Testimonial = 
+ record {
+   createdAt: Timestamp;
+   id: nat;
+   name: text;
+   quote: text;
+   rating: nat;
+   role: text;
+ };
+type ContactSubmission = 
+ record {
+   createdAt: Timestamp;
+   email: text;
+   id: nat;
+   message: text;
+   name: text;
+   phone: text;
+   programInterest: text;
+ };
+type Appointment = 
+ record {
+   createdAt: Timestamp;
+   email: text;
+   id: nat;
+   message: text;
+   name: text;
+   phone: text;
+   preferredDate: text;
+   serviceType: text;
+ };
+service : {
+  addTestimonial: (name: text, role: text, quote: text, rating: nat) -> (nat);
+  getAppointments: () -> (vec Appointment) query;
+  getContactSubmissions: () -> (vec ContactSubmission) query;
+  getTestimonials: () -> (vec Testimonial) query;
+  submitAppointment: (name: text, email: text, phone: text, serviceType:
+   text, preferredDate: text, message: text) -> (bool);
+  submitContactForm: (name: text, email: text, phone: text, programInterest:
+   text, message: text) -> (bool);
+}

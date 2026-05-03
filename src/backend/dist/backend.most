@@ -1,0 +1,57 @@
+// Version: 1.0.0
+type Appointment__697868482 =
+  {
+    createdAt : Timestamp__301639476;
+    email : Text;
+    id : Nat;
+    message : Text;
+    name : Text;
+    phone : Text;
+    preferredDate : Text;
+    serviceType : Text
+  };
+type ContactSubmission__93684224 =
+  {
+    createdAt : Timestamp__301639476;
+    email : Text;
+    id : Nat;
+    message : Text;
+    name : Text;
+    phone : Text;
+    programInterest : Text
+  };
+type Nat__490723111 = Nat__920180692;
+type Nat__920180692 = Nat;
+type Testimonial__391666464 =
+  {
+    createdAt : Timestamp__301639476;
+    id : Nat;
+    name : Text;
+    quote : Text;
+    rating : Nat;
+    role : Text
+  };
+type Timestamp__301639476 = Int;
+actor {
+  stable appointments :
+    {
+      var blockIndex : Nat__490723111;
+      var blocks : [var [var ?Appointment__697868482]];
+      var elementIndex : Nat__490723111
+    };
+  stable contactSubmissions :
+    {
+      var blockIndex : Nat__490723111;
+      var blocks : [var [var ?ContactSubmission__93684224]];
+      var elementIndex : Nat__490723111
+    };
+  stable nextAppointmentId : {var val : Nat};
+  stable nextSubmissionId : {var val : Nat};
+  stable nextTestimonialId : {var val : Nat};
+  stable testimonials :
+    {
+      var blockIndex : Nat__490723111;
+      var blocks : [var [var ?Testimonial__391666464]];
+      var elementIndex : Nat__490723111
+    }
+};
